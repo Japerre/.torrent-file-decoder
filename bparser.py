@@ -78,9 +78,6 @@ if __name__ == '__main__':
 	with open('.torrent_files\debian-12.4.0-amd64-netinst.iso.torrent', 'rb') as file:
 		file_contents = file.read()
 
-	# with open('.torrent_files/The Skin I Live In (2011) [1080p] [BluRay] [5.1] [YTS.MX].torrent', 'rb') as file:
-	# 	file_contents = file.read()
-
 	try:
 		ansi_text = file_contents.decode('ansi')
 	except UnicodeDecodeError:
